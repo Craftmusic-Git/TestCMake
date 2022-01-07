@@ -12,8 +12,15 @@
 int main(int arc, const char *argv[]){
     std::cout << "TIC TAC TOE" << std::endl;
 
-    board bd();
-    human man();
-    computer comp();
-    view vue();
+    board bd;
+    human man;
+    computer comp;
+    view vue;
+
+    while (!bd.isFull() || bd.winner() != 0)
+    {
+        man.play(bd);
+        comp.play(bd);
+    }
+    
 }
