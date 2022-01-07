@@ -7,7 +7,18 @@
 
 
 class board {
+ enum state{
+     VOID = 0,
+     HUMAN = 1,
+     COMPUTER = 2
+ };
 
+ board();
+
+ bool canPlay(int, int);
+ void play(int, int, int);
+ bool isFull();
+ int winner();
 };
 
 
