@@ -9,10 +9,10 @@
 #include "human.h"
 
 void human::play(board& b) {
-    std::cout << "Ligne : ";
     int ligne;
     int col;
     do {
+        std::cout << "Ligne : ";
         std::cin >> ligne;
         std::cout << "Colonne : ";
         std::cin >> col;
