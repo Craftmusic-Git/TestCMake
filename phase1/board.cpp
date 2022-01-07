@@ -40,4 +40,5 @@ int board::winner() {
 
     if((tab[0][0] == tab[1][1])&&(tab[1][1] == tab[2][2])&&(tab[1][1] != 0)) return tab[0][0];
     if((tab[2][0] == tab[1][1])&&(tab[1][1] == tab[0][2])&&(tab[1][1] != 0)) return tab[2][0];
+    return 0;
 }

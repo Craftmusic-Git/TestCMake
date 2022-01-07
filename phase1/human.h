@@ -11,7 +11,8 @@
 class human : public player{
 
     void virtual play(board&);
- 
+
+    virtual ~human() = default;
 };
 
 

@@ -10,7 +10,9 @@
 class view {
 
     void display(board&);
- 
+
+    virtual ~view() = default;
+
 };
 
 
