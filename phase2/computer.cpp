@@ -5,6 +5,7 @@
 #include "board.h"
 #include "player.h"
 #include "computer.h"
+#include "ialib/include/ia.h"
 
 computer::computer(){
 
@@ -15,18 +16,7 @@ void computer::play(board& b) {
     {
         return;
     }
-    for (int i = 0; i < SIZE; i++)
-    {
-        for (int j = 0; j < SIZE; j++)
-        {
-            if (b.canPlay(i,j))
-            {
-                b.play(i,j,id);
-                return;
-            }
-            
-        }
-        
-    }
-    
+    int *l, *c;
+    iaplay(b.tab,l,c);
+    b.play(*l,*c,id);    
 }
