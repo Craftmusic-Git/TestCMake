@@ -13,9 +13,10 @@ public:
     player();
 
     virtual void play(board&) = 0;
+    virtual ~player() = default;
+    protected:
+        int id;
 
-protected:
-    int id;
 };
 
 

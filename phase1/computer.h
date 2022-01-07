@@ -15,7 +15,8 @@ public:
     ~computer() = default;
 
     void virtual play(board&);
- 
+
+    virtual ~computer() = default;
 };
 
 

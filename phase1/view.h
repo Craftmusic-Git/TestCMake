@@ -12,7 +12,9 @@ public:
     view();
 
     void display(board&);
- 
+
+    virtual ~view() = default;
+
 };
 
 
