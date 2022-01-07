@@ -12,8 +12,6 @@
 class computer : public player{
 public:
     computer();
-    ~computer() = default;
-
     void virtual play(board&);
 
     virtual ~computer() = default;

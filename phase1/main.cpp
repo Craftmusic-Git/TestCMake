@@ -5,10 +5,15 @@
 
 #include "board.h"
 #include "computer.h"
+#include "player.h"
+#include "view.h"
+#include "human.h"
 
-int main(){
-    board tab();
+int main(int arc, const char *argv[]){
+    std::cout << "TIC TAC TOE" << std::endl;
+
+    board bd();
+    human man();
     computer comp();
-
-    std::cout << "Hello World" <<std::endl;
+    view vue();
 }
