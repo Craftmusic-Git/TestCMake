@@ -1,1 +1,3 @@
 cmake -G "Unix Makefiles" ..
+
+voir : llvm
