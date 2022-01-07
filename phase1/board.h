@@ -5,6 +5,7 @@
 #ifndef TPADEQLOGMAT_BOARD_H
 #define TPADEQLOGMAT_BOARD_H
 
+#define SIZE = 3
 
 class board {
 public :
@@ -22,7 +23,7 @@ public :
  int winner();
 
 private :
-    State tab[][];
+    State tab[3][3];
 };
 
 
