@@ -19,7 +19,9 @@ int main(int arc, const char *argv[]){
 
     while (!bd.isFull() || bd.winner() != 0)
     {
+        vue.display(bd);
         man.play(bd);
+        vue.display(bd);
         comp.play(bd);
     }
     
