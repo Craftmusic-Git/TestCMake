@@ -7,7 +7,8 @@
 
 
 class board {
- enum state{
+public :
+ enum State{
      VOID = 0,
      HUMAN = 1,
      COMPUTER = 2
@@ -19,6 +20,9 @@ class board {
  void play(int, int, int);
  bool isFull();
  int winner();
+
+private :
+    State tab[][];
 };
 
 

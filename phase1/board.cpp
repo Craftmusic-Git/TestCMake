@@ -4,7 +4,7 @@
 
 #include "board.h"
 
-board::board() {
+board::board() : tab[3][3] {
 
 }
 
