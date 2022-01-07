@@ -17,12 +17,15 @@ int main(int arc, const char *argv[]){
     computer comp;
     view vue;
 
-    while (!bd.isFull() || bd.winner() != 0)
+    while (!bd.isFull() && bd.winner() == 0)
     {
         vue.display(bd);
         man.play(bd);
+        bd.winner();
+        std::cout<<std::endl;
         vue.display(bd);
         comp.play(bd);
+        bd.winner();
     }
     
 }
