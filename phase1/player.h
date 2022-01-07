@@ -9,13 +9,13 @@
 
 
 class player {
-
+public:
     player();
 
     virtual void play(board&) = 0;
 
-    protected:
-        int id;
+protected:
+    int id;
 };
 
 

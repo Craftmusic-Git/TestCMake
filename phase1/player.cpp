@@ -5,6 +5,6 @@
 #include "board.h"
 #include "player.h"
 
-player::player() {
-    
+player::player() : id(2){
+
 }

@@ -8,6 +8,8 @@
 #include "board.h"
 
 class view {
+public:
+    view();
 
     void display(board&);
  
