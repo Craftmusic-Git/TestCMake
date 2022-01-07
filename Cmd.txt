@@ -1,5 +1,1 @@
-g++ *.cpp -o main
-
-pour exec :
-
-./main
+cmake -G "Unix Makefiles" ..
