@@ -9,10 +9,10 @@
 
 
 class player {
- 
-player();
 
-void play(board&);
+    int id;
+
+    void virtual play(board&) = 0;
 
  
 };
