@@ -12,6 +12,8 @@ class player {
 
     int id;
 
+    player();
+
     void virtual play(board&) = 0;
 
  
