@@ -1,28 +1,27 @@
-all: tictactoe
+CC=g++
+CFLAGS=
+LDFLAGS=
+EXEC=tictactoe
+SRC=$(wildcard *.cpp)
+OBJ=$(SRC:.cpp=.o)
 
-tictactoe: main.o computer.o human.o player.o view.o board.o
-	g++ -o tictactoe main.o computer.o human.o view.o board.o player.o
+all: $(EXEC)
 
-board.o: board.h board.cpp
-	g++ -c  board.cpp -o board.o
+$(EXEC): $(OBJ)
+	$(CC) -o $@ $^ $(LDFLAGS)
 
-view.o: view.h view.cpp board.h
-	g++ -c view.cpp -o view.o
+%.o: %.cpp
+	$(CC) -c $< -o $@
 
-player.o: player.h player.cpp board.h
-	g++ -c player.cpp -o player.o
-
-human.o: human.h human.cpp board.h player.h
-	g++ -c human.cpp -o human.o
-
-computer.o: computer.h computer.cpp board.h player.h
-	g++ -c computer.cpp -o computer.o
-
+board.o: board.cpp board.h
+view.o: view.cpp view.h board.h
+player.o: player.cpp player.h board.h
+human.o: human.cpp human.h board.h player.h
+computer.o: computer.cpp computer.h board.h player.h
 main.o: main.cpp computer.h human.h view.h board.h player.h
-	g++ -c main.cpp -o main.o
 
 clean:
 	rm -rf *.o
 
 cleanall: clean
-	rm -f tictactoe
+	rm -f $(EXEC)
