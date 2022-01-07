@@ -12,7 +12,7 @@ class player {
 
     player();
 
-    void virtual play(board&) = 0;
+    virtual void play(board&) = 0;
 
     protected:
         int id;

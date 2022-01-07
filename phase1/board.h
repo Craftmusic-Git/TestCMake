@@ -20,6 +20,7 @@ public :
  bool isFull();
  int winner();
 
+ virtual ~board() = default;
 public :
     int tab[3][3];
 };
