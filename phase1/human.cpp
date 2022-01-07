@@ -14,7 +14,7 @@ void human::play(board& b) {
     int col;
     do {
         std::cin >> ligne;
-        std::cout << "\nColonne : ";
+        std::cout << "Colonne : ";
         std::cin >> col;
     }while (!b.canPlay(ligne,col));
     b.play(ligne,col,HUMAN);
