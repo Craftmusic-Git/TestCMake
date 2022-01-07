@@ -35,13 +35,3 @@ void board::play(int x, int y, int played) {
 int board::winner() {
 
 }
-
-void board::printTab() {
-
-    for(int i = 0; i < SIZE; i ++){
-        for(int j = 0; j < SIZE; j++ ){
-            std::cout << " " << tab[i][j];
-        }
-        std::cout << "\n";
-    }
-}

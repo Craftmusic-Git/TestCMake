@@ -7,6 +7,10 @@
 
 #define SIZE 3
 
+#define VOID 0
+#define HUMAN 1
+#define COMPUTER 2
+
 class board {
 public :
  board();
@@ -15,7 +19,6 @@ public :
  void play(int, int, int);
  bool isFull();
  int winner();
- void printTab();
 
 public :
     int tab[3][3];
